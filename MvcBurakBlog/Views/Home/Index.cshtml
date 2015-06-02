@@ -1,0 +1,174 @@
+﻿@{
+    ViewBag.Title = "Cirriculum Vitae of Burak Vural";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BURAK VURAL - COMPUTER ENGINEER</title>
+
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/cv.css" media="screen">
+    <![endif]-->
+    <link rel="stylesheet" media="screen and (max-width:480px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:481px)" href="cv.css">
+    <link rel="stylesheet" media="print" href="print.css">
+</head>
+
+<body>
+   
+    <!-- Header -->
+    <header role="banner">
+        <div class="container_16">
+            <hgroup>
+                <h1>Burak VURAL</h1>
+                <h2>Computer Engineer</h2>
+               
+</hgroup>
+
+            <figure>
+                <img src="burak.jpg" alt="Burak VURAL">
+            </figure>
+        </div>
+    </header>
+
+    <!-- Contact -->
+    <section class="contactform clearfix">
+        <div class="container_16">
+            <h3>Contact Me</h3>
+            <p>
+                You can fill the form for reach me
+                <br><em>All fields must be filled </em>
+            </p>
+            <form novalidate="novalidate" method="post" action="#" name="contact" class="grid_16">
+                <p class="grid_10"><textarea name="message" placeholder="Your message" class="required"></textarea></p>
+                <p class="grid_6">
+                    <input name="Number" placeholder="Name-Surname" class="required" type="text">
+                    <input name="Email" placeholder="Email Address" class="required" type="email">
+                    <input name="Dispatch" value="Send Message" class="required" type="submit">
+                    <span class="messageform"></span>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Corps -->
+    <section role="main" class="container_16 clearfix">
+        <div class="grid_16">
+            <!-- A propos -->
+            <div class="grid_8 apropos">
+                <h3>About me</h3>
+                
+                <p>This section serves as my presentation</p>
+                <p>
+                    I am Computer Engineering Student in Yıldırım Beyazıt University which is the youngest university in Ankara
+                    I also interested with skills about computer
+               
+                    
+                </p>
+            </div>
+
+            <!-- Compétences -->
+            <div class="grid_8 competences">
+                <h3>Expertise</h3>
+                <ul class="barres">
+                    <li data-skills="80">Java && Data Structure<span style="width: 80%;"></span></li>
+                    <li data-skills="75">Html,CSS,JavaScript,C#<span style="width: 60%;"></span></li>
+                    <li data-skills="60">Asp.Net MVC 5<span style="width: 75%;"></span></li>
+                    <li data-skills="70">C<span style="width: 40%;"></span></li>
+                    <li data-skills="75">Artificial Intelligence<span style="width: 95%;"></span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Expériences -->
+        <div class="grid_16 experiences">
+            <h3>Experiences</h3>
+            <ul>
+                <li>
+                    <h4><strong>Position Title</strong> </h4>
+                    <span class="lieu">Place</span>
+                    <span class="dates">Dates</span>
+                    <p>I was borned in Ankara ,1993 October and I am still living in Ankara with my family.</p>
+                </li>
+                <li>
+                    <h4><strong>Position Title</strong></h4>
+                    <span class="lieu">Place</span>
+                    <span class="dates">Dates</span>
+                    <p>I was borned in Ankara ,1993 October and I am still living in Ankara with my family..</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Formations -->
+        <div class="grid_16 formations">
+            <h3>Formations</h3>
+            <ul>
+                <li>
+                    <h4><strong>Education Informations</strong> School Name</h4>
+                    <span class="lieu">Place</span>
+                    <span class="dates">Period</span>
+                    <p>Ülkü Akın Primary School</p>
+                </li>
+                <li>
+                    <h4><strong>Education Informations</strong> School Name</h4>
+                    <span class="lieu">Place</span>
+                    <span class="dates">Period</span>
+                    <p>Private Evrensel College</p>
+                </li>
+                <li>
+                    <h4><strong>Education Informations</strong> School Name</h4>
+                    <span class="lieu">Place</span>
+                    <span class="dates">Period</span>
+                    <p>YBU</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Loisirs -->
+        <div class="grid_8 loisirs">
+            <h3>Hobies</h3>
+            <p><strong>Sports :</strong> Basketball</p>
+            <p><strong>Association :</strong>Football</p>
+
+        </div>
+
+        <!-- Contact -->
+        <div class="grid_8 contact">
+            <h3>Contact</h3>
+            <p>If my profile interests you , do not hesitate to contact me :</p>
+            <ul>
+                <li class="lieu">Ankara, Turkey</li>
+                <li class="phone">+905057245456</li>
+                <li class="mail"><a href="burakvural93@gmail.com">burakvural93@gmail.com</a></li>
+                <li class="site"><a href="burakvuralblog@com.tr">Web Site in Design Phase</a></li>
+                
+            </ul>
+            <h3>
+                <p> Total Number of Visitors: @ApplicationInstance.Application["Totaluser"]</p>
+
+
+            </h3>
+        </div>
+    </section>
+
+    <!-- Scripts JavaScript -->
+    <script src="jquery-1.js"></script>
+    <script src="validate.js"></script>
+    <!--[if lt IE 9]>
+    <script src="scripts/placeholder.js"></script>
+    <![endif]-->
+    <script src="plugins.js"></script>
+    <a href="Home/GeneratePDF"> Download CV as PDF</a>
+</body>
+</html>

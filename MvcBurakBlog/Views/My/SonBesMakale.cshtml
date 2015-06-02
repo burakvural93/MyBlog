@@ -1,0 +1,23 @@
+﻿@model List<MvcBurakBlog.Models.Makale>
+
+@{
+    //En dışa bir çerçeve attık. İçeriği ortaladık ve 25'er piksel boşluk verdik.
+    <div style="border:1px solid black;padding:25px;text-align:center;">
+        <h2>Last Five Articles</h2>
+        <!--
+        //Burada Model dediğimiz zaman, Controllerden gelen veriye direkt ulaşmaktayız.
+        //Biz burada liste halinde gelen Model'imizde döngü kurarak, içindeki verileri
+        //html olarak basacağız.
+            -->
+        @foreach (var item in Model)
+        {
+            //Burada her makalenin etrafına çerçeve attık
+            <div style="border:1px solid black">
+                <h3>@item.Baslik</h3>
+                <p>@item.Icerik</p>
+                <strong>Tarih : @item.Tarih </strong>
+            </div>
+        }
+    </div>
+}
+
